@@ -95,6 +95,27 @@ const journey = [
 
 const contactTags = ["Remote-ready", "Async friendly", "Hands-on builder", "Available for contract"];
 
+const highlights = [
+  {
+    title: "Conversion wins",
+    stat: "+32%",
+    delta: "launch uplift",
+    detail: "Modernized a launch microsite with motion, resulting in higher opt-ins and clearer CTAs.",
+  },
+  {
+    title: "Automation savings",
+    stat: "620",
+    delta: "hours reclaimed",
+    detail: "Python and Selenium checks caught regressions before launch, cutting manual QA cycles.",
+  },
+  {
+    title: "Academic rigor",
+    stat: "3.9",
+    delta: "GPA",
+    detail: "Maintained high honors at Lake Belton High School while leading project teams and labs.",
+  },
+];
+
 function animateValue(element, endValue) {
   let start = 0;
   const duration = 1400;
@@ -152,6 +173,21 @@ function renderContactChips() {
   row.innerHTML = contactTags.map((tag) => `<span class="chip">${tag}</span>`).join("");
 }
 
+function renderHighlights() {
+  const grid = document.getElementById("highlight-grid");
+  grid.innerHTML = highlights
+    .map(
+      (item) => `
+        <article class="highlight-card">
+          <div class="stat">${item.stat} <span>${item.delta}</span></div>
+          <h3>${item.title}</h3>
+          <p>${item.detail}</p>
+        </article>
+      `
+    )
+    .join("");
+}
+
 function init() {
   animateValue(document.getElementById("metric-sites"), metrics.sites);
   animateValue(document.getElementById("metric-automation"), metrics.automationHours);
@@ -163,6 +199,7 @@ function init() {
   renderTimeline(journey);
   renderBadges();
   renderContactChips();
+  renderHighlights();
 }
 
 document.addEventListener("DOMContentLoaded", init);

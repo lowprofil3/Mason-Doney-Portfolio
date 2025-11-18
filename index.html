@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mason Doney | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="pill">High-impact web developer & automation builder</p>
+      <h1>Mason Doney</h1>
+      <p class="lede">
+        I create elegant, conversion-focused web experiences and automate the
+        workflows that power them. From design systems to Python-driven
+        integrations, I build reliable solutions that scale.
+      </p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="#contact">Work with me</a>
+        <a class="button button--ghost" href="#projects">View featured work</a>
+      </div>
+      <div class="hero__metrics">
+        <div class="metric">
+          <span class="metric__value" id="metric-sites">0</span>
+          <span class="metric__label">Web projects launched</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value" id="metric-automation">0</span>
+          <span class="metric__label">Automation hours saved</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value" id="metric-gpa">0</span>
+          <span class="metric__label">GPA at Lake Belton High School</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="card highlight">
+        <p class="eyebrow">Currently crafting</p>
+        <h3>Modern, responsive web systems</h3>
+        <p>Reusable components, accessible UX, and a focus on measurable outcomes.</p>
+      </div>
+      <div class="card">
+        <p class="eyebrow">Automation toolkit</p>
+        <ul class="stack-list">
+          <li>Python + Selenium</li>
+          <li>FastAPI & serverless flows</li>
+          <li>Data pipelines & reporting</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="skills">
+      <div class="section__header">
+        <p class="eyebrow">Capabilities</p>
+        <h2>Built on strong fundamentals</h2>
+        <p class="section__lede">Front-end craftsmanship backed by reliable automation and disciplined delivery.</p>
+      </div>
+      <div class="grid" id="skill-grid"></div>
+    </section>
+
+    <section class="section section--muted" id="projects">
+      <div class="section__header">
+        <p class="eyebrow">Featured work</p>
+        <h2>Recent projects & outcomes</h2>
+        <p class="section__lede">A selection of web experiences and automation wins that demonstrate how I deliver results.</p>
+      </div>
+      <div class="grid" id="project-grid"></div>
+    </section>
+
+    <section class="section" id="automation">
+      <div class="section__header">
+        <p class="eyebrow">Python automation</p>
+        <h2>Automating the unglamorous work</h2>
+        <p class="section__lede">From QA to data collection, I build resilient scripts that free teams to focus on strategy.</p>
+      </div>
+      <div class="grid" id="automation-grid"></div>
+    </section>
+
+    <section class="section section--accent" id="academics">
+      <div class="section__header">
+        <p class="eyebrow">Academic excellence</p>
+        <h2>Lake Belton High School, high honors</h2>
+        <p class="section__lede">Consistently high grades reflect discipline, attention to detail, and a growth mindset.</p>
+      </div>
+      <div class="academic-card">
+        <div>
+          <p class="pill pill--light">Student Leader</p>
+          <h3>Strong GPA with advanced coursework</h3>
+          <p>Balancing rigorous classes with project work taught me how to prioritize, communicate, and deliver reliably.</p>
+        </div>
+        <ul class="badge-list" id="academic-badges"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="journey">
+      <div class="section__header">
+        <p class="eyebrow">Trajectory</p>
+        <h2>Web development journey</h2>
+        <p class="section__lede">Progressive milestones that shaped my craft as a developer and systems thinker.</p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="section section--muted" id="contact">
+      <div class="section__header">
+        <p class="eyebrow">Collaborate</p>
+        <h2>Let’s build something together</h2>
+        <p class="section__lede">I’m available for freelance and contract opportunities focused on modern web products and automation.</p>
+      </div>
+      <div class="contact-panel">
+        <div>
+          <h3>Ready to move fast</h3>
+          <p>I pair thoughtful design with disciplined engineering. Share your goals and I’ll respond with an action plan.</p>
+          <div class="chip-row" id="contact-tags"></div>
+        </div>
+        <div class="contact-actions">
+          <a class="button button--primary" href="mailto:mason.doney@example.com">Email Mason</a>
+          <a class="button button--ghost" href="#projects">See outcomes</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built with care by Mason Doney — web development, automation, and measurable results.</p>
+  </footer>
+
+  <script src="assets/js/app.js" type="module"></script>
+</body>
+</html>
